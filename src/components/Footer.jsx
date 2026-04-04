@@ -273,7 +273,7 @@ const Footer = () => {
     <FooterSection>
       <TopRow>
         <BrandBlock>
-          <BrandName>Jackline Achieng</BrandName>
+          <BrandName><i>sales & marketing consultant</i></BrandName>
           <BrandAddress>Nairobi, Kenya</BrandAddress>
         </BrandBlock>
 

@@ -587,11 +587,11 @@ main {
 @media (max-width: 900px) {
   .viper-hero__grid {
     grid-template-columns: 1fr;
-    gap: 2.5rem;
+    gap: clamp(1.25rem, 4vw, 2.5rem);
   }
 
   .viper-hero__visual {
-    min-height: 380px;
+    min-height: clamp(260px, 48vw, 340px);
     order: -1;
   }
 
@@ -678,6 +678,42 @@ main {
   flex-direction: column;
   justify-content: center;
   min-height: min(100vh, 100svh);
+}
+
+/* Small screens: top-align hero so logo strip stays on-screen (centering pushed it below the fold) */
+@media (max-width: 768px) {
+  .home-stack__pin {
+    justify-content: flex-start;
+  }
+
+  .home-stack__pin .viper-hero {
+    justify-content: flex-start;
+    min-height: auto;
+    flex: 0 1 auto;
+  }
+
+  .client-logo-marquee {
+    margin-top: 0.65rem;
+    padding-bottom: 0.5rem;
+  }
+
+  .client-logo-marquee__viewport {
+    padding: 0.45rem 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .client-logo-marquee {
+    margin-top: 0.5rem;
+  }
+
+  .client-logo-marquee__theo {
+    font-size: 1.2rem;
+  }
+
+  .client-logo-marquee__item {
+    gap: 0.35rem;
+  }
 }
 
 .home-stack__layers {

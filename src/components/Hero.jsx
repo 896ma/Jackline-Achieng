@@ -2,9 +2,9 @@ import { Link } from 'react-router-dom'
 import ClientLogoMarquee from './ClientLogoMarquee'
 
 const IMG_PRIMARY =
-  'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=1200&q=80'
+  'https://res.cloudinary.com/dpoy4wsul/image/upload/v1775304417/jacky_gdiojc.jpg'
 const IMG_SECONDARY =
-  'https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&w=900&q=80'
+  'https://res.cloudinary.com/dpoy4wsul/image/upload/v1775327964/salesjacky_csduyg.jpg'
 
 function Hero() {
   return (

@@ -504,7 +504,7 @@ export default function SneakPeakCarousel() {
       <div className="sp-root">
         <header className="sp-header">
           <span className="sp-icon">🔭</span>
-          <h2 className="sp-title">Sneak peak of my works</h2>
+          <h2 className="sp-title">Sneak peak of some of my works</h2>
         </header>
 
         <div className="sp-wrap">

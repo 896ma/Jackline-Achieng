@@ -21,16 +21,20 @@ function Hero() {
           </h1>
 
           <p className="viper-hero__lead">
-            Hi, I am Jackline — I&apos;m a digital designer and creative technologist with over a
-            decade of experience shaping brands and interfaces people love.
+            Hi, I&apos;m Jackline — a seasoned creative professional with over a decade of experience building compelling brands
+            and delivering impactful experiences that drive real business results.
           </p>
 
-          <p className="viper-hero__intro-label">Hey, Just An Intro</p>
+          <p className="viper-hero__intro-label">
+            <i>Where brand strategy meets Revenue-driven results &amp; measurable growth</i>.
+          </p>
 
           <p className="viper-hero__body">
-            A designer based in Nairobi, passionate about creating immersive visual experiences.
-            From crisp layouts to motion and interaction — every detail is built to tell your
-            story.
+            I partner with brands to craft immersive, strategy-driven experiences that elevate visibility and drive growth.{' '}
+            <br />
+            From refined layouts to motion and interaction, every element is intentionally designed to communicate your story,{' '}
+            <br />
+            attract the right audience, and convert attention into results.
           </p>
 
           <Link className="viper-hero__cta" to="/contact">

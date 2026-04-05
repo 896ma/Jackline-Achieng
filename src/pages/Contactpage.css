@@ -79,54 +79,42 @@
   
   .muted { color: var(--muted); margin-bottom: 1rem; }
   
-  .contact-page .contact-form {
-    display: grid;
-    gap: 0.75rem;
-  }
-
-  .contact-page .label {
-    display: grid;
-    gap: 0.35rem;
-    font-size: 0.9rem;
-    color: var(--ink);
-  }
-
-  .contact-page .contact-form .input,
-  .contact-page .contact-form .textarea {
+  .contact-form { display: grid; gap: 0.75rem; }
+  
+  .label { display: grid; gap: 0.35rem; font-size: 0.9rem; color: var(--ink); }
+  
+  .input, .textarea {
     width: 100%;
     border-radius: 10px;
     background: var(--field-inner) !important;
-    border: 1px solid var(--field-border) !important;
+    border: 1px solid var(--field-border);
     padding: 0.75rem 0.9rem;
     color: var(--ink) !important;
-    outline: none !important;
+    outline: none;
     appearance: none;
     -webkit-appearance: none;
-    box-shadow: none !important;
-    font: inherit;
+    box-shadow: none;
     transition: border-color 0.2s ease, background 0.2s ease;
   }
 
-  .contact-page .contact-form .input::placeholder,
-  .contact-page .contact-form .textarea::placeholder {
+  .input::placeholder,
+  .textarea::placeholder {
     color: rgba(11, 47, 56, 0.38);
   }
 
-  .contact-page .contact-form .input:-webkit-autofill,
-  .contact-page .contact-form .textarea:-webkit-autofill {
+  .input:-webkit-autofill,
+  .textarea:-webkit-autofill {
     border: 1px solid var(--field-border) !important;
     -webkit-box-shadow: 0 0 0 1000px var(--field-inner) inset !important;
     box-shadow: 0 0 0 1000px var(--field-inner) inset !important;
     -webkit-text-fill-color: var(--ink) !important;
     caret-color: var(--ink);
   }
-
-  .contact-page .contact-form .input:focus,
-  .contact-page .contact-form .textarea:focus {
+  
+  .input:focus, .textarea:focus {
     background: var(--field-inner) !important;
-    border-color: var(--field-border-focus) !important;
-    outline: none !important;
-    box-shadow: none !important;
+    border-color: var(--field-border-focus);
+    box-shadow: none;
   }
   
   .btn {

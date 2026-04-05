@@ -1,4 +1,5 @@
 import ConsultancyMarquee from '../components/ConsultancyMarquee'
+import Feedback from '../components/Feedback'
 import Hero from '../components/Hero'
 import ClientsScroll from './ClientsScroll'
 import Testimonials from './Testimonials'
@@ -14,6 +15,7 @@ export default function HomePageLatest() {
         <ClientsScroll />
         <ConsultancyMarquee />
         <Testimonials />
+        <Feedback />
       </div>
     </div>
   )

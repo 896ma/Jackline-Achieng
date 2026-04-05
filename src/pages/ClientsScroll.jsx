@@ -112,9 +112,13 @@ export default function ClientsScroll() {
     offset: ['start end', 'end start'],
   })
 
-  const spinRaw = useTransform(scrollYProgress, [0, 1], [0, 378])
-  const spin = useSpring(spinRaw, { stiffness: 81, damping: 24, mass: 0.55 })
-  const diagonalY = useTransform(scrollYProgress, [0, 1], [-25.2, 25.2])
+  /** Ease-in: gentler response at the start of the section scroll, full range at end. */
+  const scrollEase = (p) => Math.pow(Math.min(1, Math.max(0, p)), 1.22)
+
+  const spinRaw = useTransform(scrollYProgress, (p) => 378 * scrollEase(p))
+  const spin = useSpring(spinRaw, { stiffness: 46, damping: 30, mass: 0.95 })
+  const diagonalY = useTransform(scrollYProgress, (p) => -25.2 + scrollEase(p) * 50.4)
+  const diagonalYSpring = useSpring(diagonalY, { stiffness: 46, damping: 30, mass: 0.95 })
 
   useMotionValueEvent(spin, 'change', (v) => setSpinAngle(v))
 
@@ -154,7 +158,7 @@ export default function ClientsScroll() {
         <MetaText>Creative Teams</MetaText>
       </Meta>
 
-      <Stage style={{ y: diagonalY }}>
+      <Stage style={{ y: diagonalYSpring }}>
         <Track>
           {modeledCards.map((card) => (
             <Card

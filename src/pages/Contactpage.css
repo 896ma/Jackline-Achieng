@@ -3,9 +3,10 @@
     --muted: rgba(11, 47, 56, 0.55);
     --border: rgba(88, 164, 176, 0.35);
     --surface: rgba(216, 219, 226, 0.8);
-    --field-inner: #ffffff;
-    --field-border: rgba(11, 47, 56, 0.12);
-    --field-border-focus: rgba(11, 47, 56, 0.22);
+    --field-inner: rgba(216, 219, 226, 0.45);
+    --field-inner-focus: rgba(216, 219, 226, 0.62);
+    --field-border: rgba(11, 47, 56, 0.14);
+    --field-border-focus: rgba(88, 164, 176, 0.42);
     --nav: #58a4b0;
     color: var(--ink);
     background: var(--main);
@@ -112,7 +113,7 @@
   }
   
   .input:focus, .textarea:focus {
-    background: var(--field-inner) !important;
+    background: var(--field-inner-focus) !important;
     border-color: var(--field-border-focus);
     box-shadow: none;
   }

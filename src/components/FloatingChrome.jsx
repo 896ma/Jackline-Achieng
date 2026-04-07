@@ -17,7 +17,8 @@ export default function FloatingChrome() {
   const panelId = useId()
 
   useEffect(() => {
-    setOpen(false)
+    const raf = requestAnimationFrame(() => setOpen(false))
+    return () => cancelAnimationFrame(raf)
   }, [location.pathname])
 
   useEffect(() => {

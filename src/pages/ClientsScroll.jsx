@@ -1,5 +1,5 @@
 import { useMemo, useRef, useState, useEffect } from 'react'
-import { motion, useMotionValueEvent, useScroll, useSpring, useTransform, animate } from 'framer-motion'
+import { motion, useMotionValueEvent, useScroll, useSpring, useTransform } from 'framer-motion'
 import styled from 'styled-components'
 
 const Section = styled.section`
@@ -245,7 +245,7 @@ function StarField({ spinSpeed }) {
       cancelAnimationFrame(rafRef.current)
       ro.disconnect()
     }
-  }, [])
+  }, [spinSpeed])
 
   return <StarCanvas ref={canvasRef} aria-hidden="true" />
 }
@@ -301,7 +301,7 @@ export default function ClientsScroll() {
           opacity,
         }
       }),
-    [spinAngle]
+    [STEP, spinAngle]
   )
 
   return (

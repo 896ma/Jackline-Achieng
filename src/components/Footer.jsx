@@ -266,6 +266,13 @@ const WatermarkText = styled.span`
   font-family: 'DM Sans', sans-serif;
   user-select: none;
   text-align: center;
+
+  @media (max-width: 580px) {
+    font-size: clamp(44px, 13vw, 62px);
+    letter-spacing: -1px;
+    line-height: 1;
+    padding: 0.35rem 0.75rem 0.5rem;
+  }
 `
 
 const Footer = () => {
@@ -279,8 +286,7 @@ const Footer = () => {
 
         <TaglineBlock>
           <Tagline>
-            We&apos;re a cutting-edge tech lab bridging the gap between consumers and technology
-            through bold, scalable solutions.
+            Your one stop for sales & marketing consultancy
           </Tagline>
         </TaglineBlock>
 

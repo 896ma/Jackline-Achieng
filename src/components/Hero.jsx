@@ -21,20 +21,12 @@ function Hero() {
           </h1>
 
           <p className="viper-hero__lead">
-            Hi, I&apos;m Jackline — a seasoned creative professional with over a decade of experience building compelling brands
-            and delivering impactful experiences that drive real business results.
+            Hi, I&apos;m Jackline, a sales and marketing consultant with 10+ years helping brands build clear positioning,
+            design high-impact experiences, and turn attention into measurable growth and revenue.
           </p>
 
           <p className="viper-hero__intro-label">
             <i>Where brand strategy meets Revenue-driven results &amp; measurable growth</i>.
-          </p>
-
-          <p className="viper-hero__body">
-            I partner with brands to craft immersive, strategy-driven experiences that elevate visibility and drive growth.{' '}
-            <br />
-            From refined layouts to motion and interaction, every element is intentionally designed to communicate your story,{' '}
-            <br />
-            attract the right audience, and convert attention into results.
           </p>
 
           <Link className="viper-hero__cta" to="/contact">
